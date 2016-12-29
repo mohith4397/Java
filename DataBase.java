@@ -29,7 +29,7 @@ switch (choice)
 case 1:
 	System.out.println("Enter the name");
 	mgr.name=reader.next();
-	reak;
+	break;
 case 2:
 	System.out.println("Name: " + mgr.name);
 	System.out.println("id: " + mgr.id);
