@@ -8,19 +8,41 @@ Execution exe=new Execution();
 exe.DataManipulation();
 }
 }
+class Employee 
+{String name,id,ssid;
+int salary;
+Employee(String id,String ssid,int salary)
+{
+this.id=id;
+this.ssid=ssid;
+this.salary=salary;
+}
 
+}
+class Manager extends Employee 
+{
+String Department;
+Manager(String id,String ssid,int salary,String Department)
+{
+super(id,ssid,salary);
+this.Department=Department;	
+}
+}
+class Engineer extends Employee 
+{
+String Designation;
+Engineer(String id,String ssid,int salary,String Designation)
+{
+super(id,ssid,salary);
+this.Designation=Designation;	
+}
 
-class Employee {String name,id,ssid;int salary;}
-class Manager extends Employee {String Department;}
-class Engineer extends Employee {String Designation;}
+}
+
 class Execution {
 Scanner reader = new Scanner(System.in);
-Engineer engnr=new Engineer();
-Manager mgr=new Manager();
-//mgr.salary=22000;
-//engnr.salary=30000;
-//mgr.id="3333444412";
-//mgr.ssid="A9876543210";
+Engineer engnr=new Engineer("1234","112233478",32000,"Developer");
+Manager mgr=new Manager("1234","112233478",32000,"Sales");
 void DataManipulation(){
 System.out.println("----MENU----");
 System.out.println("1.Enter Data");
@@ -38,7 +60,6 @@ case 2:
 	System.out.println("Name: " + mgr.name);
 	System.out.println("id: " + mgr.id);
 	System.out.println("SSID: " + mgr.ssid);
-	System.out.println("Salary of Manager: " + mgr.salary);
 	System.out.println("Salary of Engineer: " + engnr.salary);
 	DataManipulation();
 	break;
