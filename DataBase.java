@@ -17,18 +17,22 @@ class Execution {
 Scanner reader = new Scanner(System.in);
 Engineer engnr=new Engineer();
 Manager mgr=new Manager();
+//mgr.salary=22000;
+//engnr.salary=30000;
+//mgr.id="3333444412";
+//mgr.ssid="A9876543210";
 void DataManipulation(){
 System.out.println("----MENU----");
 System.out.println("1.Enter Data");
 System.out.println("2.Display Data");
 System.out.println("3.Exit");
-System.out.println("4.Continue");
 int choice=reader.nextInt();
 switch (choice)
 {
 case 1:
 	System.out.println("Enter the name");
 	mgr.name=reader.next();
+	DataManipulation();
 	break;
 case 2:
 	System.out.println("Name: " + mgr.name);
@@ -36,11 +40,11 @@ case 2:
 	System.out.println("SSID: " + mgr.ssid);
 	System.out.println("Salary of Manager: " + mgr.salary);
 	System.out.println("Salary of Engineer: " + engnr.salary);
+	DataManipulation();
 	break;
 case 3:
 	System.exit(0);
-case 4:
-	DataManipulation();
+
 default:
 	System.out.println("Invalid choice");
 	DataManipulation();
