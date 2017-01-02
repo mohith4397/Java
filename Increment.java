@@ -1,5 +1,5 @@
 import java.io.*;
-public class Operator{
+public class Increment{
 public static void main(String [] args)
 {
 values val=new values();
