@@ -1,0 +1,16 @@
+CREATE TABLE MOVIE 
+(
+TITLE VARCHAR(30),
+RELEASEDATE DATE,
+DIRECTOR VARCHAR(30),
+ACTOR VARCHAR(30),
+RATING VARCHAR(1),
+TYPE VARCHAR(30)
+);
+
+INSERT INTO MOVIE VALUES ('Ki & Ka', '2016-01-01','R. Balki', 'Arjun Kapoor', 'S','Romance');
+INSERT INTO MOVIE VALUES ('Akira', '2016-09-02','A.R. Murugadoss', 'Sonakshi Sinha', 'U','Action');
+INSERT INTO MOVIE VALUES ('Chennai Express', '2016-08-02','Rohit Shetty', 'Shah Rukh Khan', 'S','Adventure');
+INSERT INTO MOVIE VALUES ('Kaththi', '2016-01-02','A.R. Murugadoss', 'Vijay', 'U','Action');
+INSERT INTO MOVIE VALUES ('Dilwale', '2016-08-02','Rohit Shetty', 'Shah Rukh Khan', 'S','Romance');
+INSERT INTO MOVIE VALUES ('Ye Dil He Mushkil', '2016-01-01','Karan Johar', 'Ranbir Kapoor', 'U','Romance');

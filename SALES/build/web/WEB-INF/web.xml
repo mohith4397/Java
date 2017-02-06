@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Total_Purchase_by_Single_Customer</servlet-name>
+        <servlet-class>com.niit.customers.Total_Purchase_by_Single_Customer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Purchases_made_during_January</servlet-name>
+        <servlet-class>com.niit.customers.Purchases_made_during_January</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Product_discount_greater_than_25</servlet-name>
+        <servlet-class>com.niit.customers.Product_discount_greater_than_25</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Product_wise_total_category_sales</servlet-name>
+        <servlet-class>com.niit.customers.Product_category_wise_total_sales</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Total_Purchase_by_Single_Customer</servlet-name>
+        <url-pattern>/Total_Purchase_by_Single_Customer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Purchases_made_during_January</servlet-name>
+        <url-pattern>/Purchases_made_during_January</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Product_discount_greater_than_25</servlet-name>
+        <url-pattern>/Product_discount_greater_than_25</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Product_wise_total_category_sales</servlet-name>
+        <url-pattern>/Product_wise_total_category_sales</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
